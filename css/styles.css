@@ -1,0 +1,158 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilo del generales*/
+body {
+    background-color: #d1ba9b;
+}
+
+body.bodyInicio {
+    display: flex;
+    flex-direction: column;   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main ul{
+    display: flex;
+    justify-content: space-around; 
+    background-color: #d1ba9b; 
+    padding: 1rem;
+    box-shadow: 0px 1px 5px black;
+    height: 75px; 
+}
+
+
+
+
+
+main ul li a {
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+    
+}
+main ul li a h1{
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 5px black;
+    transition: 2s;
+}
+
+main ul li a h1:hover{
+    transform: scale(0.9);
+    transition: 2s;
+
+}
+
+main ul li a h1 span { 
+    display: block;
+    text-align: center;
+    
+}
+/*logo*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*estilo inicio*/
+
+main.inicio {
+    height: 600px;
+}
+
+main.inicio nav ul {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #d1ba9b; 
+    padding: 0.5rem;
+    box-shadow: 0px 1px 5px black;
+    height: 65px;
+}
+
+main.inicio nav ul li a{
+    text-decoration: none;
+    
+} 
+main.inicio nav ul li a h1 span {
+    display: block;
+    text-align: center;
+}
+main.inicio nav ul li a h1{
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 5px black;
+}
+
+section{
+    height: 250px;
+}
+
+/*sobre nos*/
+
+main div.titulos h1.sobreNos{
+    color: black;
+    text-align: center;
+    margin: 20px auto 20px;
+}
+main div.titulos h2.sobreNos{
+    color: black;
+    padding: 0 0 15px 15px;
+    
+}
+main div.historia {
+    color: black;
+    text-align: center;
+    height: 500px;
+}
+
+/* sust y eco */
+main div.fraseEco{
+    color: black;
+    text-align: center;
+    height: 600px;
+}
+main div.fraseEco h1{
+   padding: 30px 0 30px;
+}
+
+/* turismo */
+section.turismo{
+    display: grid;
+    grid-template-columns: 1, 2;
+    grid-template-rows: 1, 2;
+    text-align: center;
+    justify-content: center;   
+    color: black;
+    height: 200px;
+}
+
+section.turismo div {
+    padding: 15px;
+}
+
+
+/* todavia no se que hacer con la dispocion, pero uso esto para que veas que lo se usar */
+
+@media screen and (min-width: 600px) {
+   body.productos {
+    background-color: red;
+   }
+}
+
+    
+
+    
